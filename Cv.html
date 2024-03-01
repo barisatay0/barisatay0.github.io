@@ -40,10 +40,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="Contact.html">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Cv.html">Cv</a>
+                        </li>
                     </ul>
-                    <span class="navbar-text text-black h4">
-                        Barış Atay
-                    </span>
                 </div>
             </div>
         </nav>
@@ -67,12 +67,12 @@
             document.documentElement.lang = newLanguage;
 
             var languageButton = document.querySelector('.btn.btn-dark');
-            languageButton.textContent = (newLanguage === "en") ? "Turkish" : "İngilizce";
+            languageButton.textContent = (newLanguage === "en") ? "Turkish" : "English";
 
             var pdfEmbed = document.querySelector('embed');
             pdfEmbed.src = "Documents/" + ((newLanguage === "en") ? "EnglishCv" : "TurkishCv") + ".pdf";
             var pageTitle = document.querySelector('title');
-            pageTitle.textContent = "Barış Atay - " + ((newLanguage === "en") ? "English Cv" : "Türkçe Cv");
+            pageTitle.textContent = "Barış Atay - " + ((newLanguage === "en") ? "English Cv" : "Turkish Cv");
         }
         var languageButton = document.querySelector('.btn.btn-dark');
         languageButton.addEventListener('click', changeLanguage);
