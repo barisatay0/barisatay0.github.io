@@ -7,8 +7,12 @@
     <title>Barış Atay</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="github-mark.png">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+
 </head>
+
 <style>
     @media only screen and (max-width: 600px) {
 
@@ -38,9 +42,6 @@
                             <a class="nav-link" href="https://barisatay0.github.io">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="Cv">Cv</a>
                         </li>
                     </ul>
@@ -52,12 +53,13 @@
         <div class="row justify-content-center align-items-center vh-200">
             <div class="col-md-4 text-center">
                 <div class="img-container">
-                    <button class=" btn btn-dark w-100 mt-1 mb-1">Turkish</button>
+                    <button class=" btn btn-dark w-100 mt-1 mb-1 border border-light">Turkish</button>
                     <embed src="Documents/EnglishCv.pdf" type="application/pdf" height="700px" width="100%">
                 </div>
             </div>
         </div>
     </div>
+    <i class="bi bi-instagram w-100"></i>
     <script>
         function changeLanguage() {
             var currentLanguage = document.documentElement.lang;
@@ -77,7 +79,32 @@
         var languageButton = document.querySelector('.btn.btn-dark');
         languageButton.addEventListener('click', changeLanguage);
     </script>
-
+    <footer class="text-center bg-body-tertiary">
+        <div class="container pt-4">
+            <section class="mb-4">
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="tel:05382839792"
+                    role="button" data-mdb-ripple-color="dark"><i class="fa fa-phone"></i></a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="mailto:barisatay0@hotmail.com" role="button" data-mdb-ripple-color="dark"><i
+                        class="fa fa-envelope"></i></a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="instagram.com/barisatay0" role="button" data-mdb-ripple-color="dark"><i
+                        class="fab fa-instagram"></i></a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="www.linkedin.com/in/barış-atay" role="button" data-mdb-ripple-color="dark"><i
+                        class="bi bi-linkedin"></i>
+                </a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="https://github.com/barisatay0" role="button" data-mdb-ripple-color="dark"><i
+                        class="fab fa-github"></i></a>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            <a class="text-body" style="text-decoration: none;">Barış Atay</a>
+        </div>
+    </footer>
 </body>
 <script src="Script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
