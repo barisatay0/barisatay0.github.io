@@ -1,36 +1,35 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Barış Atay - CV</title>
+    <title>Barış Atay - Cv</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="github-mark.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-light">
+<body class="bg-white">
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="https://avatars.githubusercontent.com/u/114981821?v=4" alt="Profile Photo" width="50"
-                     height="50" class="rounded-circle">
-                <span class="ms-2 fw-bold">Barış Atay</span>
+                <img src="https://avatars.githubusercontent.com/u/114981821?v=4" width="50" height="50"
+                     class="rounded-circle" alt="Barış Atay">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="cv.html">CV</a>
+                        <a class="nav-link" href="cv.html">Cv</a>
                     </li>
                 </ul>
             </div>
@@ -38,9 +37,14 @@
     </nav>
 </header>
 
+<section class="hero">
+    <img src="https://avatars.githubusercontent.com/u/114981821?v=4" alt="Barış Atay">
+    <h1>Welcome to my curriculum vitae</h1>
+    <p>Software Developer at A Plus Engineering | Laravel , Python , Node.js </p>
+</section>
+
 <main class="container py-5">
     <div class="text-center">
-        <h1 class="mb-4">Curriculum Vitae</h1>
         <p class="lead">Explore my professional journey and accomplishments.</p>
     </div>
     <div class="row justify-content-center">
@@ -59,23 +63,21 @@
     </div>
 </main>
 
-<footer class="text-center bg-white py-4 mt-5 border-top">
-    <div class="container">
-        <section class="mb-4">
-            <a class="btn btn-link btn-floating btn-lg text-body m-1" href="mailto:barisatay0@hotmail.com"
-               role="button"><i class="bi bi-envelope"></i></a>
-            <a class="btn btn-link btn-floating btn-lg text-body m-1" href="https://barisatay0.github.io"
-               role="button"><i class="bi bi-google"></i></a>
-            <a class="btn btn-link btn-floating btn-lg text-body m-1" href="https://instagram.com/barisatay0"
-               role="button"><i class="bi bi-instagram"></i></a>
-            <a class="btn btn-link btn-floating btn-lg text-body m-1"
-               href="https://www.linkedin.com/in/bar%C4%B1%C5%9F-atay" role="button"><i
-                    class="bi bi-linkedin"></i></a>
-            <a class="btn btn-link btn-floating btn-lg text-body m-1" href="https://github.com/barisatay0"
-               role="button"><i class="bi bi-github"></i></a>
-        </section>
-        <p class="text-muted mb-0">&copy; 2024 Barış Atay. All rights reserved.</p>
+<section id="contact" class="text-center bg-light py-5">
+    <h2>Contact Me</h2>
+    <p>You can reach me through the following platforms</p>
+    <div class="d-flex justify-content-center">
+        <a href="mailto:barisatay0@hotmail.com" class="btn btn-outline-dark m-2"><i
+                class="bi bi-envelope"></i> Email</a>
+        <a href="https://linkedin.com/in/bar%C4%B1%C5%9F-atay" class="btn btn-outline-dark m-2"><i
+                class="bi bi-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/barisatay0" class="btn btn-outline-dark m-2"><i
+                class="bi bi-github"></i> GitHub</a>
     </div>
+</section>
+
+<footer class="text-center bg-dark text-white py-3">
+    <p>&copy; 2024 Barış Atay | All Rights Reserved From Me !!!!!</p>
 </footer>
 
 <script>
