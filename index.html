@@ -1,135 +1,184 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>My Personal Portfolio</title>
+    <title>Barış Atay | Software Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="github-mark.png">
+    <style>
+        .hero {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer .btn {
+            margin: 0 10px;
+        }
+    </style>
 </head>
+<body>
 
-<body class="bg-light">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark p-2">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="https://avatars.githubusercontent.com/u/114981821?v=4" width="50" height="50"
-                     class="rounded-circle" alt="Barış Atay">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+<section class="hero" id="about">
+    <img src="https://avatars.githubusercontent.com/u/114981821?v=4" alt="Barış Atay">
+    <h1>Barış Atay</h1>
+    <p>Software Developer | Node.js, Python, Laravel</p>
+</section>
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 bg-light p-3">Featured Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Documents/kodama_logo.webp" class="card-img-top bg-dark" alt="Project 1">
+                    <div class="card-body">
+                        <a href="https://github.com/barisatay0/kodama.js" class="text-decoration-none">
+                            <h5 class="card-title">Kodama.js</h5>
+                        </a>
+                        <p class="card-text">Node.js CLI tool for generating API components quickly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Documents/Egoistsky.png" class="card-img-top bg-dark p-5" style="object-fit: contain"
+                         alt="Project 2">
+                    <div class="card-body">
+                        <a href="https://github.com/barisatay0/Social-Media-Platform" class="text-decoration-none">
+                            <h5 class="card-title">Social Media Platform</h5>
+                        </a>
+                        <p class="card-text">A Core PHP-based platform for social media interactions also my first
+                            experiences with development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Documents/ModelAgencyManagement.png" class="card-img-top bg-dark"
+                         style="object-fit: contain;" alt="Project 3">
+                    <div class="card-body">
+                        <a href="https://github.com/barisatay0/Model-Agency-Management" class="text-decoration-none">
+                            <h5 class="card-title">Model Agency Management</h5>
+                        </a>
+                        <p class="card-text">Laravel-based package management system for modeling agencies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resume" class="py-5 text-center">
+    <h2 class="text-center mb-5 bg-light p-3">Resume</h2>
+    <div class="text-center my-4">
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                <i class="bi bi-globe"></i> Select Language
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<section class="hero text-center text-white bg-dark py-5">
-    <h1 class="display-4">Welcome to My Portfolio</h1>
-    <p class="lead">Software Developer at A Plus Engineering | Laravel , Python , Node.js</p>
-</section>
-
-<main class="container py-5">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <button class="btn btn-outline-dark w-100 mb-3" id="languageButton">Switch to Turkish</button>
-                    <embed src="Documents/EnglishCv.pdf" type="application/pdf" height="600px" width="100%" id="cvEmbed">
-                </div>
-            </div>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" id="turkishOption"><i class="bi bi-flag-fill text-danger"></i>
+                    Turkish</a></li>
+                <li><a class="dropdown-item" href="#" id="englishOption"><i class="bi bi-flag-fill text-primary"></i>
+                    English</a></li>
+            </ul>
         </div>
     </div>
-</main>
-
-<section id="projects" class="projects py-5">
-    <div class="container text-center">
-        <h2 class="mb-4">Featured Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5>Kodama.js</h5>
-                        <p>Node.js CLI tool to quickly generate API components</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5>Social Media Platform</h5>
-                        <p>A basic Core PHP-based platform for social media interactions.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5>Model Agency Management System</h5>
-                        <p>Package management system built with Laravel for modeling agencies</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5>Webp Converter</h5>
-                        <p>A node.js based API that converts photos to webp format.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <embed src="Documents/EnglishCv.pdf" type="application/pdf" height="600px" width="50%" id="cvEmbed"
+           class="rounded shadow-sm">
 </section>
 
-<section id="contact" class="text-center bg-light py-5">
-    <h2>Contact Me</h2>
-    <p class="mb-4">You can reach me through the following platforms</p>
+<footer>
+    <p>&copy; 2025 Barış Atay | Software Developer</p>
+    <p>Reach me via the following platforms</p>
     <div class="d-flex justify-content-center">
-        <a href="mailto:barisatay0@hotmail.com" class="btn btn-outline-dark m-2"><i class="bi bi-envelope"></i> Email</a>
-        <a href="https://linkedin.com/in/bar%C4%B1%C5%9F-atay" class="btn btn-outline-dark m-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/barisatay0" class="btn btn-outline-dark m-2"><i class="bi bi-github"></i> GitHub</a>
+        <a href="mailto:barisatay0@hotmail.com" class="btn btn-outline-light m-2">
+            <i class="bi bi-envelope"></i> Email
+        </a>
+        <a href="https://linkedin.com/in/bar%C4%B1%C5%9F-atay" class="btn btn-outline-light m-2">
+            <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/barisatay0" class="btn btn-outline-light m-2">
+            <i class="bi bi-github"></i> GitHub
+        </a>
     </div>
-</section>
-
-<footer class="text-center bg-dark text-white py-3">
-    <p>&copy; 2024 Barış Atay | All Rights Reserved</p>
 </footer>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const languageButton = document.getElementById('languageButton');
         const cvEmbed = document.getElementById('cvEmbed');
+        const turkishOption = document.getElementById('turkishOption');
+        const englishOption = document.getElementById('englishOption');
 
-        languageButton.addEventListener('click', function () {
-            const currentLanguage = languageButton.textContent.trim();
+        turkishOption.addEventListener('click', function () {
+            cvEmbed.src = "Documents/TurkishCv.pdf";
+        });
 
-            if (currentLanguage === "Switch to Turkish") {
-                cvEmbed.src = "Documents/TurkishCv.pdf";
-                languageButton.textContent = "Switch to English";
-            } else {
-                cvEmbed.src = "Documents/EnglishCv.pdf";
-                languageButton.textContent = "Switch to Turkish";
-            }
+        englishOption.addEventListener('click', function () {
+            cvEmbed.src = "Documents/EnglishCv.pdf";
         });
     });
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-
-</body>
-
-</html>
